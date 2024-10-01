@@ -16,24 +16,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.webp">
   <link rel="stylesheet" href="./assets/styles/main.scss">
   <script defer src="./assets/scripts/main.js"></script>
   <title>Frontend Mentor | Article preview component</title>
 </head>
 <body>
 <main>
-  Shift the overall look and feel by adding these wonderful
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps
-  it felt slightly bare and uninviting. I&rsquo;ve got some simple tips
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
+  <article class="card">
+    <figure class="card__figure">
+      <img class="card__figure-img" src="./assets/images/drawers.webp" alt="Drawers">
+    </figure>
+    <h1 class="card__title">
+      Shift the overall look and feel by adding these wonderful
+      touches to furniture in your home
+    </h1>
+    <p class="card__paragraph">
+      Ever been in a room and felt like something was missing? Perhaps
+      it felt slightly bare and uninviting. I&rsquo;ve got some simple tips
+      to help you make any room feel complete.
+    </p>
+    <div class="card__user">
+      <figure class="card__user-figure">
+        <img src="./assets/images/avatar-michelle.webp" alt="User image (Avatar)">
+      </figure>
+      <p class="card__user-username">Michelle Appleton</p>
+      <p class="card__user-date">
+        <time datetime="2020-06-28">28 Jun 2020</time>
+      </p>
+    </div>
+    <button class="card__share-button card__share-button--active" aria-label="Share this card">
+      <img src="./assets/images/icon-share.svg" alt="Icon Share">
+    </button>
+  </article>
 </main>
 <footer class="footer">
   <div class="footer__attribution">
