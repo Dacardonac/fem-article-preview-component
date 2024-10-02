@@ -3,13 +3,14 @@
 .footer {
   @include manrope;
   font-weight: 700;
+  margin-bottom: 1.25rem;
 
   &__attribution {
-    font-size: 11px;
+    font-size: 0.810rem;
     text-align: center;
   }
 
   &__link {
-    color: hsl(228, 45%, 44%);
+    color: var(--links);
   }
 }
