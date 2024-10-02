@@ -1,0 +1,42 @@
+.card {
+  &__shared {
+    background-color: var(--very-dark-grayish-blue);
+    max-width: 327px;
+    height: 64px;
+    padding: 22px 32px;
+    border-radius: 0 0 0.625rem 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+
+    &-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 0 56px 0 21px;
+      cursor: pointer;
+    }
+
+    &-button--active {
+      background-color: var(--btn-active);
+    }
+
+    &-svg--active {
+      fill: var(--white);
+    }
+
+    &-title {
+      color: var(--grayish-blue);
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 5px;
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+}
