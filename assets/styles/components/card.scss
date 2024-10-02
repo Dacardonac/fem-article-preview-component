@@ -1,0 +1,68 @@
+@use '../utils/mixins' as *;
+
+// Mobile First
+.card {
+  background-color: #fff;
+  @include manrope;
+  max-width: 327px;
+  border-radius: 10px;
+  user-select: none;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5034);
+
+  &__figure-img {
+    width: 327px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__title {
+    padding: 36px 32px 12px 32px;
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+
+  &__paragraph {
+    padding: 0 32px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: var(--paragraph)
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    max-width: 172px;
+    height: 40px;
+    gap: 1rem;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 32px 59px 20px 32px;
+    cursor: pointer;
+  }
+
+  &__user-avatar {
+    max-width: 40px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &__user-date {
+    font-weight: 500;
+    color: var(--date);
+  }
+
+  &__share-button {
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__share-svg {
+    background-color: var(--light-grayish-blue);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

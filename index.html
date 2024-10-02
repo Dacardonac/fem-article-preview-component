@@ -22,9 +22,39 @@
   <title>Frontend Mentor | Article preview component</title>
 </head>
 <body>
-<main>
-</main>
-<footer>
-</footer>
+  <main>
+    <article class="card">
+      <figure class="card__figure">
+        <img class="card__figure-img" src="./assets/images/drawers.webp" alt="Drawers">
+      </figure>
+      <h1 class="card__title">
+        Shift the overall look and feel by adding these wonderful touches to furniture in your home
+      </h1>
+      <p class="card__paragraph">
+        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+        I&rsquo;ve got some simple tips to help you make any room feel complete.
+      </p>
+      <div class="card__user">
+        <figure class="card__user-figure">
+          <img class="card__user-avatar" src="./assets/images/avatar-michelle.webp" alt="User image (Avatar)">
+        </figure>
+        <div class="card__user-info">
+          <p class="card__user-username">Michelle Appleton</p>
+          <p class="card__user-date">
+            <time datetime="2020-06-28">28 Jun 2020</time>
+          </p>
+        </div>
+      </div>
+      <button class="card__share-button card__share-button--active" aria-label="Share this card">
+        <img class="card__share-svg" src="./assets/images/icon-share.svg" alt="Icon Share">
+      </button>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="footer__attribution">
+      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a class="footer__link" href="https://github.com/Dacardonac" target="_blank">Daniel Alejandro Cano Cardona</a>.
+    </div>
+  </footer>
 </body>
 </html>

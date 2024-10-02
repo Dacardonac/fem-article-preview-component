@@ -2,6 +2,7 @@
 
 .footer {
   @include manrope;
+  font-weight: 700;
 
   &__attribution {
     font-size: 11px;
