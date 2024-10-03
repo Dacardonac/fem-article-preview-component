@@ -1,23 +1,27 @@
 .card {
+  position: relative;
+  overflow: hidden;
+
   &__shared {
     background-color: var(--very-dark-grayish-blue);
-    max-width: 327px;
-    height: 64px;
-    padding: 22px 32px;
+    max-width: 20.438rem;
+    height: 4rem;
+    padding: 1.375rem 2rem;
     border-radius: 0 0 0.625rem 0.625rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     position: absolute;
     bottom: 0;
     z-index: 2;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.5s ease;
 
     &-icons {
       display: flex;
       align-items: center;
       gap: 1rem;
-      margin: 0 56px 0 21px;
-      cursor: pointer;
+      margin: 0 3.5rem 0 1.313rem;
     }
 
     &-button--active {
@@ -30,13 +34,22 @@
 
     &-title {
       color: var(--grayish-blue);
-      font-size: 13px;
-      line-height: 20px;
-      letter-spacing: 5px;
+      font-size: 0.813rem;
+      line-height: 1.25rem;
+      letter-spacing: 0.313rem;
     }
-  }
 
-  &__hidden {
-    display: none;
+    &-visible {
+      transform: translateY(0);
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &-hidden {
+      transform: translateY(100%);
+      opacity: 0;
+      z-index: -1;
+      transition: 0.2s ease;
+    }
   }
 }

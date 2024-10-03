@@ -38,6 +38,11 @@
     line-height: 1.25rem;
     letter-spacing: 0.008rem;
     color: var(--paragraph);
+
+    &-padding {
+      padding: 0 2rem 1.25rem 2rem;
+    }
+
   }
 
   &__user {
@@ -77,6 +82,10 @@
       font-weight: 500;
       color: var(--date);
     }
+
+    &-hidden {
+      opacity: 0;
+    }
   }
 
   &__share {
@@ -93,7 +102,7 @@
     }
 
     &-svg {
-      max-width: 0.938rem;
+      max-width: 0.9rem;
       height: auto;
     }
   }

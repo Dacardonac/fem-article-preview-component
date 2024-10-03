@@ -55,12 +55,28 @@ I learned and implemented Javascript, along with its properties and methods. I a
 
 You can see an example below:
 
-```html
+``` SCSS
+
+
 
 ```
 
-```css
+``` JavaScript
+shareBtn.addEventListener("click", () => {
+  shared.classList.add('card__shared-visible');
+  if (shared.classList.contains('card__shared-visible')) {
+    user.classList.add('card__user-hidden');
+    paragraph.classList.add('card__paragraph-padding');
+  }
+});
 
+document.addEventListener('click', (event) => {
+  if (!shared.contains(event.target) && !shareBtn.contains(event.target)) {
+    shared.classList.remove('card__shared-visible');
+    user.classList.remove('card__user-hidden');
+    paragraph.classList.remove('card__paragraph-padding');
+  }
+});
 ```
 
 ### Continued development
