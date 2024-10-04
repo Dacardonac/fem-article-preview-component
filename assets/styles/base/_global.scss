@@ -8,3 +8,9 @@ main {
   align-items: center;
   margin: 4.625rem 1.5rem 5.063rem 1.5rem;
 }
+
+@media (min-width: 90rem) {
+  main {
+    margin: 12.5rem auto;
+  }
+}
