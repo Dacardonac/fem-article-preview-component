@@ -1,6 +1,8 @@
 @use '../utils/mixins' as *;
 // Mobile Design First
 .card {
+  position: relative;
+  overflow: hidden;
   background-color: var(--white);
   @include manrope;
   max-width: 20.438rem;

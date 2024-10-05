@@ -26,6 +26,7 @@ shared.innerHTML = `
     </svg>
   </a>
 </div>
+<div class="card__shared-arrow"></div>
 <button class="card__share-button card__shared-button--active" aria-label="Share this card" role="button">
   <svg class="card__share-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="13" aria-hidden="true">
     <title>Share Icon</title>
@@ -35,11 +36,13 @@ shared.innerHTML = `
 `;
 
 shared.classList.add('card__shared')
+shared.classList.add('card__shared-hidden')
 card.appendChild(shared);
 
 shareBtn.addEventListener("click", () => {
   shared.classList.add('card__shared-visible');
   if (shared.classList.contains('card__shared-visible')) {
+    shareBtn.classList.add('card__shared-btn--active');
     user.classList.add('card__user-hidden');
     shared.classList.remove('card__shared-hidden');
     paragraph.classList.add('card__paragraph-padding');
@@ -48,9 +51,12 @@ shareBtn.addEventListener("click", () => {
 
 document.addEventListener('click', (event) => {
   if (!shared.contains(event.target) && !shareBtn.contains(event.target)) {
+    shareBtn.classList.remove('card__shared-btn--active');
     shared.classList.remove('card__shared-visible');
     shared.classList.add('card__shared-hidden');
     user.classList.remove('card__user-hidden');
     paragraph.classList.remove('card__paragraph-padding');
   }
 });
+
+'card__shared-svg--active'
