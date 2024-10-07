@@ -2,7 +2,7 @@
 // Mobile Design First
 .card {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   background-color: var(--white);
   @include manrope;
   max-width: 20.438rem;

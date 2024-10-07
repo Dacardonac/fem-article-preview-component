@@ -29,6 +29,10 @@
       fill: var(--white);
     }
 
+    &-social {
+      display: flex;
+    }
+
     &-title {
       color: var(--grayish-blue);
       font-size: 0.813rem;
@@ -46,7 +50,7 @@
       transform: translateY(100%);
       opacity: 0;
       z-index: -1;
-      transition: 0.2s ease;
+      transition: 0.1s ease;
     }
   }
 
@@ -56,19 +60,27 @@
     }
 
     &__shared {
-      top: 45%;
-      right: -65px;
+      top: 47%;
+      right: -68.5px;
       max-width: 248px;
-      height: 67px;
-      padding: 1rem 0;
+      height: 55px;
+      padding: 18px 36px 17px 37px;
       border-radius: 10px;
 
+      &-social {
+        max-width: 175px;
+        height: 20px;
+        display: flex;
+      }
+
       &-title {
-        margin-left: 37px;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 5px;
       }
 
       &-icons {
-        margin: 0 21px 0 36px;
+        margin: 0 0 0 21px;
       }
 
       &-arrow {
@@ -98,7 +110,7 @@
 
       &-visible--desktop {
         display: flex;
-        z-index: 10;
+        z-index: 1;
         transform: none;
         opacity: 1;
       }
