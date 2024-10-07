@@ -54,38 +54,38 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 90rem) {
     &__user-hidden {
       opacity: 1;
     }
 
     &__shared {
       top: 47%;
-      right: -68.5px;
-      max-width: 248px;
-      height: 55px;
-      padding: 18px 36px 17px 37px;
-      border-radius: 10px;
+      right: -4.200rem;
+      max-width: 15.5rem;
+      height: 3.438rem;
+      padding: 1.125rem 2.25rem 1.063rem 2.313rem;
+      border-radius: 0.625rem;
 
       &-social {
-        max-width: 175px;
-        height: 20px;
+        max-width: 10.938rem;
+        height: 1.25rem;
         display: flex;
       }
 
       &-title {
-        font-size: 13px;
-        line-height: 20px;
-        letter-spacing: 5px;
+        font-size: 0.813rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.313rem;
       }
 
       &-icons {
-        margin: 0 0 0 21px;
+        margin: 0 0 0 1.313rem;
       }
 
       &-arrow {
         position: absolute;
-        bottom: -10px;
+        bottom: -0.625rem;
         left: 50%;
         transform: translateX(-50%);
         width: 0;
